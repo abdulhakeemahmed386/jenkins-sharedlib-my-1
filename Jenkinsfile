@@ -4,7 +4,7 @@ library identifier: 'jenkins-sharedlib-my@master', retriever: modernSCM([$class:
 	remote: 'https://github.com/arehmandev/jenkins-sharedlib-my.git',
 	credentialsId: GHEAccess])
 pipeline {
-stages {
+	stages {
  	agent any
         stage("build") {
 
