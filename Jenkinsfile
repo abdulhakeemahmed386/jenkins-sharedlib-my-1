@@ -5,7 +5,7 @@ library identifier: 'jenkins-sharedlib-my@master', retriever: modernSCM([$class:
 	credentialsId: GHEAccess])
 pipeline {
 stages {
-
+ 	agent any
         stage("build") {
 
             steps {
